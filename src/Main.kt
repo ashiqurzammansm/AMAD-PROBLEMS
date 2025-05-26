@@ -1,48 +1,44 @@
 fun main() {
-    var a: Int = 10
-    var b: Int = 3
+    // Task 1: Convert group weights from kg to pounds
+    val weightsKg = listOf(60.0, 70.0, 80.0)
+    val weightsLb = weightsKg.map { it * 2.20462 }
+    println("Weights in pounds: $weightsLb")
 
-    // Arithmetic Operators
-    println("Arithmetic Operators:")
-    println("a + b = ${a + b}")     // Addition
-    println("a - b = ${a - b}")     // Subtraction
-    println("a * b = ${a * b}")     // Multiplication
-    println("a / b = ${a / b}")     // Division
-    println("a % b = ${a % b}")     // Modulus
-    println("a++ = ${a++}")         // Post-increment
-    println("Now a = $a")
-    println("b-- = ${b--}")         // Post-decrement
-    println("Now b = $b")
+    // Task 2: Convert group heights from inches to feet
+    val heightsInches = listOf(65.0, 70.0, 72.0)
+    val heightsFeet = heightsInches.map { it / 12.0 }
+    println("Heights in feet: $heightsFeet")
 
-    // Assignment Operators
-    println("Assignment Operators:")
-    var x = 5
-    println("Initial x = $x")
-    x += 2
-    println("x += 2 -> $x")
-    x -= 1
-    println("x -= 1 -> $x")
-    x *= 3
-    println("x *= 3 -> $x")
-    x /= 2
-    println("x /= 2 -> $x")
-    x %= 4
-    println("x %= 4 -> $x")
+    // Task 3: Calculate breakfast bill and split
+    val eggPrice = 10.0
+    val breadPrice = 20.0
+    val dalPrice = 30.0
+    val totalBill = eggPrice + breadPrice + dalPrice
+    val perPersonBill = totalBill / 2
+    println("Total breakfast bill: $totalBill, Per person: $perPersonBill")
 
-    // Comparison Operators
-    println("\nComparison Operators:")
-    println("a == b: ${a == b}")    // Equal
-    println("a != b: ${a != b}")    // Not equal
-    println("a > b: ${a > b}")      // Greater than
-    println("a < b: ${a < b}")      // Less than
-    println("a >= b: ${a >= b}")    // Greater or equal
-    println("a <= b: ${a <= b}")    // Less or equal
+    // Task 4: Convert 2 Ints to String, Double, Float, Long
+    val num1 = 10
+    val num2 = 20
+    val str1 = num1.toString()
+    val str2 = num2.toString()
+    val double1 = str1.toDouble()
+    val double2 = str2.toDouble()
+    val float1 = double1.toFloat()
+    val float2 = double2.toFloat()
+    val long1 = float1.toLong()
+    val long2 = float2.toLong()
+    println("Converted values: Longs = $long1, $long2")
 
-    // Logical Operators
-    println("\nLogical Operators:")
-    val condition1 = true
-    val condition2 = false
-    println("condition1 && condition2: ${condition1 && condition2}")  // AND
-    println("condition1 || condition2: ${condition1 || condition2}")  // OR
-    println("!condition1: ${!condition1}")                             // NOT
+    // Task 5: Add 5 people's weights and convert to pounds
+    val fiveWeightsKg = listOf(55.0, 60.0, 65.0, 70.0, 75.0)
+    val totalWeightKg = fiveWeightsKg.sum()
+    val totalWeightLb = totalWeightKg * 2.20462
+    println("Total weight in kg: $totalWeightKg, in pounds: $totalWeightLb")
+
+    // Task 6: Bank account balances average
+    val accounts = listOf(1200.0, 1400.0, 1600.0, 1800.0)
+    val totalBalance = accounts.sum()
+    val averageBalance = totalBalance / accounts.size
+    println("Average bank balance: $averageBalance")
 }
