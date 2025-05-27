@@ -1,10 +1,10 @@
-fun main(){
+fun main() {
     LocalBazarSection()
     SchoolCourseEnrollment()
     HotelRoomAvailability()
 }
 
-fun LocalBazarSection(){
+fun LocalBazarSection() {
     val fish: Boolean = false
     val vegetable: Boolean = false
     val fruits: Boolean = false
@@ -36,8 +36,8 @@ fun LocalBazarSection(){
     val hasButterBuns: Boolean = false
     val hasCreamBuns: Boolean = true
 
-
     if (fish) {
+        println("Section Fish is available.")
         if (hasTunaFish) {
             println("Tuna fish")
         } else if (hasSalmonFish) {
@@ -48,6 +48,7 @@ fun LocalBazarSection(){
             println("No fish available")
         }
     } else if (vegetable) {
+        println("Section Vegetable is available.")
         if (hasCarrot) {
             println("Carrot")
         } else if (hasBroccoli) {
@@ -58,6 +59,7 @@ fun LocalBazarSection(){
             println("No vegetables available")
         }
     } else if (fruits) {
+        println("Section Fruits is available.")
         if (hasApple) {
             println("Apple")
         } else if (hasBanana) {
@@ -68,6 +70,7 @@ fun LocalBazarSection(){
             println("No fruits available")
         }
     } else if (meat) {
+        println("Section Meat is available.")
         if (hasBeef) {
             println("Beef")
         } else if (hasLamb) {
@@ -78,6 +81,7 @@ fun LocalBazarSection(){
             println("No meat available")
         }
     } else if (bakery) {
+        println("Section Bakery is available.")
         if (hasWhiteBread) {
             println("White Bread")
         } else if (hasButterBuns) {
@@ -91,7 +95,6 @@ fun LocalBazarSection(){
         println("No sections are currently available.")
     }
 }
-
 
 
 fun SchoolCourseEnrollment() {
@@ -125,7 +128,6 @@ fun SchoolCourseEnrollment() {
     val csMorning: Boolean = false
     val csAfternoon: Boolean = false
     val csEvening: Boolean = false
-
 
     if (math) {
         println("Course Math is open for enrollment.")
@@ -186,7 +188,6 @@ fun SchoolCourseEnrollment() {
         println("No courses are open for enrollment.")
     }
 }
-
 
 
 fun HotelRoomAvailability() {
@@ -280,4 +281,3 @@ fun HotelRoomAvailability() {
         println("No rooms are currently available.")
     }
 }
-
